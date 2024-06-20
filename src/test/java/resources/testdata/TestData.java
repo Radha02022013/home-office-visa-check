@@ -8,24 +8,22 @@ public class TestData {
     public Object[][] getData(){
         Object[][] data = new Object[][]{
                 {"Australia","Tourism"},
-                {"Chile","Work, academic visit or business"},
-                {"Colombia","Join partner or family for a long stay" },
-                {"Finance","London"},
-                {"business Analyst"},
-                {"Java Developer"},
         };
         return data;
     }
 
-    @DataProvider(name = "AustralianComingToUk")
-    public Object[][] getData(){
+    @DataProvider(name = "Chile")
+    public Object[][] getData1(){
         Object[][] data = new Object[][]{
-                {"Australia","Tourism"},
-                {"Chile","Work, academic visit or business"},
+                {"Chile","Work academic visit or business","Health and care professional"},
+        };
+        return data;
+    }
+
+    @DataProvider(name = "Colombia")
+    public Object[][] getData2(){
+        Object[][] data = new Object[][]{
                 {"Colombia","Join partner or family for a long stay" },
-                {"Finance","London"},
-                {"business Analyst"},
-                {"Java Developer"},
         };
         return data;
     }
